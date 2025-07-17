@@ -19,7 +19,6 @@ _steps = [
 #    "test_regression_model"
 ]
 
-
 # This automatically reads in the configuration
 @hydra.main(config_name='config')
 def go(config: DictConfig):
