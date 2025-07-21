@@ -5,11 +5,12 @@ This script download a URL to a local destination
 import argparse
 import logging
 import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import wandb
-
 from wandb_utils.log_artifact import log_artifact
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
